@@ -1,0 +1,159 @@
+a {
+  text-decoration: none;
+}
+
+.greeting {
+  background: center / cover no-repeat url(../img/Fon_MTK.png);
+  position: relative;
+  min-height: 100vh;
+
+  .container {
+    z-index: 4 !important;
+    position: relative;
+  }
+
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+
+  ul {
+    width: 640px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 55px 60px 0 0;
+  }
+
+  .logo {
+    margin: 40px 0 0 90px;
+  }
+
+  a {
+    color: white;
+    font-size: 15px;
+
+  }
+
+  a:hover {
+    color: rgba(64, 105, 211, 1);
+  }
+}
+
+.items__greeting {
+  text-align: center;
+  padding-bottom: 375px;
+  padding-top: 200px;
+
+
+  .sub__title {
+    color: var(--white-color);
+    font-family: var(--font-base);
+    font-weight: 700;
+    font-size: 48px;
+    margin: 0 0 20px 0;
+  }
+
+  .p__headline {
+    color: var(--white-color);
+    font-size: 24px;
+    font-weight: 400;
+    font-family: var(--font-base);
+    margin-bottom: 20px;
+  }
+
+  button {
+    background-color: var(--white-color);
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
+  }
+
+  .header__button-left {
+    background-color: var(--white-color);
+    font-size: 20px;
+    padding: 15px 20px;
+    border-radius: 60px;
+
+    a {
+      color: var(--black-color);
+    }
+  }
+
+  .header__button-right {
+    background: rgba(0, 0, 0, 0.1);
+    border: 2px solid #4069D3;
+    padding: 15px 30px;
+    border-radius: 60px;
+    margin-left: 10px;
+
+    a {
+      color: var(--white-color);
+    }
+  }
+
+  a {
+    font-family: var(--font-base-dm);
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+
+
+
+// provesoin
+
+
+.profession__block-items {
+  margin-top: 130px;
+  display: grid;
+  grid-template-columns: repeat(3, 20%);
+  grid-auto-rows: auto;
+  justify-content: center;
+  gap: 46px;
+
+  
+
+
+  .profession__block-item {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    min-height: 300px;
+    text-align: center;
+    padding: 16px;
+  }
+
+  .profession__block-item img {
+    grid-row: 1;
+    width: 100%;
+  }
+
+  .p-text-gray {
+    grid-row: 4;
+  }
+
+  .profession__block-item span {
+    grid-row: 3;
+    width: 34px;
+    height: 4px;
+    border-radius: 30px;
+    background-color: #313BAC;
+    margin: 23px 0 16px 0;
+  }
+
+  .profession__title {
+    grid-row: 2;
+    font-family: var(--font-base-dm);
+    color: var(--black-color);
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 15px;
+  }
+
+}

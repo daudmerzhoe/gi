@@ -108,14 +108,13 @@ nav {
 
 
 .profession__block-items {
-  margin-top: 130px;
   display: grid;
   grid-template-columns: repeat(3, 20%);
   grid-auto-rows: auto;
   justify-content: center;
   gap: 46px;
 
-  
+
 
 
   .profession__block-item {
@@ -156,4 +155,56 @@ nav {
     margin-top: 15px;
   }
 
+}
+
+// questions
+
+.questions__block-items {
+  display: flex;
+  flex-direction: column; // Отображение в колонку
+  align-items: center; // Центрируем блоки
+  gap: 16px; // Расстояние между элементами
+
+
+  .questions__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff; // Белый фон для блока
+    padding: 15px 24px; // Внутренние отступы
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Лёгкая тень
+    transition: background-color 0.3s;
+    margin: 10px 0 0 10px;
+
+    &:hover {
+      background-color: #f5f5f5; // Слегка серый фон при наведении
+    }
+
+    p {
+      font-family: var(--font-base-dm);
+      font-weight: 500;
+      font-size: 18px; // Размер текста
+      color: var(--black-color);
+      margin: 0;
+    }
+
+    .questions__plus {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;     
+      color: var( --secondary-color); // Зелёный плюс
+      border-radius: 50%; // Круглая кнопка
+      font-size: 40px; // Размер плюса
+      transition: background-color 0.3s, transform 0.3s;
+      cursor: pointer;
+
+      &::after {
+        content: '+'; // Символ плюса
+      }
+    }
+  }
 }

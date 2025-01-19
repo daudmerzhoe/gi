@@ -1,0 +1,263 @@
+.items__greeting {
+  text-align: center;
+  margin: 344px 0 0 0;
+
+  h1 {
+    font-weight: 600;
+    font-size: 96px;
+    font-family: var(--font-base);
+  }
+
+
+}
+
+.about__items {
+  display: flex;
+  justify-content: space-around;
+  margin: 226px 0 0 0;
+
+  article {
+    max-width: 617px;
+    position: relative;
+
+
+
+    p {
+      font-family: var(--font-base-dm);
+      font-weight: 500;
+      font-size: 40px;
+      text-align: end;
+
+
+
+      &:nth-child(3) {
+        color: var(--secondary-color);
+        font-size: 28px;
+        margin: 30px 0 70px 0;
+      }
+    }
+
+    .line {
+      width: 20px;
+      height: 151px;
+      background: linear-gradient(#313BAC, #FFFFFF);
+      position: absolute;
+    }
+  }
+
+  .about__description-item {
+    max-width: 656px;
+    width: 100%;
+    height: 212px;
+
+    .about__img-box {
+      img {
+        width: 19.2rem;
+
+        &:nth-child(1) {
+          margin: 0 36px 0 0;
+        }
+      }
+    }
+
+
+    .text__description {
+      margin: 73px 0 61px 0;
+    }
+  }
+
+
+  .about__statistics {
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    max-width: 681px;
+    width: 100%;
+    margin: 0 0 84px 0;
+
+    .stat {
+
+
+      span {
+        font-size: 40px;
+        font-family: var(--font-base-dm);
+        font-weight: 500;
+        color: var(--black-color);
+
+      }
+
+      p {
+        margin: 10px 0 0 0;
+        font-size: 16px;
+        font-family: var(--font-base-dm);
+        font-weight: 400;
+        color: var(--black-color);
+      }
+    }
+  }
+}
+
+.about__info {
+  display: flex;
+  position: relative;
+
+  .image-group {
+    position: relative; // Устанавливаем родительский элемент как относительный
+    display: flex;
+    gap: 10px;
+
+    img {
+      position: absolute; // Делаем изображения абсолютными
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      border: 2px solid transparent;
+      object-fit: cover;
+
+      &:nth-child(1) {
+        top: 0;
+        left: 0;
+      }
+
+      &:nth-child(2) {
+        top: 0px; // Смещаем второе изображение
+        left: 44px;
+      }
+
+      &:nth-child(3) {
+        top:0px; // Смещаем третье изображение
+        left: 88px;
+      }
+    }
+  }
+
+  .learn-more {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--black-color);
+    font-family: var(--font-base-dm);
+    gap: 10px;
+    position: absolute;
+    left: 200px;
+    top: 12px;
+  
+    .button-circle {
+      width: 50px;
+      height: 50px;
+      background-color: var(--gray-color);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+    }
+  }
+}
+
+
+
+// Вторй
+
+
+.about__info-items{
+  display: flex;
+  width: calc(100% + 40px);
+  
+
+  &:nth-child(1){
+    margin: 139px 0 0 0;
+  }
+  
+  &:nth-child(2){
+    flex-direction: row-reverse;
+
+    img{
+      margin: 0 0 0 172px ;
+    }
+  }
+  
+  article{
+    padding: 64px 0 0 0;
+    max-width: 500px;
+    width: 100%;
+
+
+    .p-text-black{
+      &:nth-child(4){
+        margin: 0 0 50px 0;
+      }
+    }
+
+    hr{
+      max-width: 250px;
+      height: 3px;
+      border: 0;
+      background-color: var(--secondary-color);
+      margin: 50px 0 40px 0;
+    }
+
+    h2{
+      font-size: 32px;
+      font-weight: 500;
+      font-family: var(--font-base-dm);
+      color: var(--black-color);
+      margin-bottom: 10px;
+    }
+
+    h3{
+      font-weight: 400;
+      size: 20px;
+      font-family: var(--font-base-dm);
+      color: var(--secondary-color);
+    }
+  }
+
+  img{
+    max-width: 720px;
+    margin: 0 50px 0 0;
+  }
+}
+
+
+
+
+
+// footer
+footer{
+  background-color: var(--black-color);
+  margin: 250px 0 0 0;
+}
+.footer__items{
+  display: flex;
+  justify-content: space-between;
+  max-width: 850px;
+  width: 100%;
+  margin: 0 auto;
+
+  .footer__child{
+    text-align: center;
+    padding: 70px 0 0 0;
+
+    h2{
+      size: 18px;
+      font-weight: 800;
+      font-family: var(--font-base-dm);
+      color: var(--primary-color);
+      margin-bottom: 20px;
+    }
+
+    p{
+      margin: 0 0 15px 0;
+    }
+  }
+}
+
+.footer__sub-items{
+  margin: 220px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+
+}
